@@ -129,7 +129,8 @@ OUTCOMES_MODEL_TEMPLATE = {
             "panelType": "list",
             "imgPath": "assets/icons/student.svg",
             "heading": "Learners Outcomes",
-            "subheading": "",
+            "learner_subheading": "",
+            "impact_subheading": "",
             "body": (
                 "The learner at the centre - their learning, well-being and aspirations "
                 "are what every layer works toward."
@@ -175,7 +176,8 @@ OUTCOMES_MODEL_TEMPLATE = {
             "panelType": "list",
             "imgPath": "assets/icons/school-solid.svg",
             "heading": "Schools and Anganwadi Improvement",
-            "subheading": "",
+            "learner_subheading": "",
+            "impact_subheading": "",
             "body": (
                 "Schools and anganwadi centres - where teaching happens and children spend "
                 "most of their day."
@@ -221,7 +223,8 @@ OUTCOMES_MODEL_TEMPLATE = {
             "imgPath": "assets/icons/community-group.svg",
             "eyebrow": "Community",
             "heading": "Community",
-            "subheading": "",
+            "learner_subheading": "",
+            "impact_subheading": "",
             "body": (
                 "Families and local networks that support and demand good education for "
                 "their children."
@@ -266,6 +269,9 @@ OUTCOMES_MODEL_TEMPLATE = {
             "panelType": "story",
             "imgPath": "",
             "eyebrow": "Society",
+            "heading": "Society",
+            "learner_subheading": "",
+            "impact_subheading": "",
             "body": (
                 "The broader social norms and structures that surround the community."
             ),
@@ -319,7 +325,8 @@ OUTCOMES_MODEL_TEMPLATE = {
             "imgPath": "",
             "eyebrow": "System Institutions",
             "heading": "System Institutions",
-            "subheading": "Strengthening public education systems",
+            "learner_subheading": "",
+            "impact_subheading": "",
             "body": (
                 "The governance, policy and institutions that enable and resource education. "
                 "These institutions create the conditions for improvement at scale."
@@ -403,7 +410,8 @@ OUTCOMES_MODEL_TEMPLATE = {
             "panelType": "story",
             "eyebrow": "Network",
             "heading": "Network",
-            "subheading": "Partners and collaborators",
+            "learner_subheading": "",
+            "impact_subheading": "",
             "body": (
                 "The wider web of actors and movements connecting everything. "
                 "This layer reflects the relationships that help ideas, resources and learning move across the ecosystem."
@@ -501,10 +509,29 @@ def is_bare_gcs_asset_url(value):
 
 
 def get_layer_from_action(action):
-    normalized_action = normalize_text(action)
-    for action_key, layer_key in LAYER_ACTIONS.items():
-        if action_key in normalized_action:
-            return layer_key
+    if not action:
+        return None
+    normalized = normalize_text(action)
+
+    # Strip context phrases that contain 'learner' or 'impact' to avoid false layer matches
+    cleaned = re.sub(r"underwhatshapeslearneroutcomes?section?", "", normalized)
+    cleaned = re.sub(r"whatshapeslearneroutcomes?", "", cleaned)
+    cleaned = re.sub(r"inourframeworkformeasuringimpactsection?", "", cleaned)
+    cleaned = re.sub(r"ourframeworkformeasuringimpact", "", cleaned)
+
+    if any(k in cleaned for k in ["school", "anganwadi", "aanganwadi"]):
+        return "schools"
+    if "community" in cleaned:
+        return "community"
+    if any(k in cleaned for k in ["system", "institutes", "institution", "insititution"]):
+        return "system"
+    if "society" in cleaned:
+        return "society"
+    if "network" in cleaned:
+        return "network"
+    if any(k in cleaned for k in ["learner", "student"]):
+        return "students"
+
     return None
 
 
@@ -530,16 +557,25 @@ def build_list_items(layer_key, content):
     return list_items
 
 
-def apply_layer_definition(layer, content):
+def apply_layer_definition(layer, content, row_idx=None):
     lines = [strip_list_marker(line) for line in split_content(content)]
     if not lines:
         return
 
-    layer["heading"] = lines[0]
-    if len(lines) > 1:
-        layer["subheading"] = lines[1]
-    if len(lines) > 2:
-        layer["body"] = " ".join(lines[2:])
+    if row_idx is not None and row_idx < 75:
+        # Rows 62 to 74 update learner_subheading
+        layer["learner_subheading"] = " ".join(lines)
+    else:
+        # Rows 75 onwards update impact_subheading
+        if len(lines) == 1:
+            layer["impact_subheading"] = lines[0]
+        else:
+            layer["heading"] = lines[0]
+            layer["impact_subheading"] = lines[1]
+            if len(lines) > 2:
+                layer["body"] = " ".join(lines[2:])
+
+    layer.pop("subheading", None)
 
 
 def apply_homepage_content(config, action, section, content):
@@ -606,7 +642,10 @@ def generate_outcomes_model_json(excel_file, sheet_name=DEFAULT_SHEET_NAME, outp
         print(f"⚠️ {e}. Skipping outcomes model JSON generation.")
         return None
 
-    for row in sheet.iter_rows(min_row=CONTENT_START_ROW, values_only=True):
+    for row_idx, row in enumerate(
+        sheet.iter_rows(min_row=CONTENT_START_ROW, values_only=True),
+        start=CONTENT_START_ROW,
+    ):
         action = row[1] if len(row) > 1 else None
         section = row[2] if len(row) > 2 else None
         content = row[3] if len(row) > 3 else None
@@ -619,12 +658,17 @@ def generate_outcomes_model_json(excel_file, sheet_name=DEFAULT_SHEET_NAME, outp
             continue
 
         layer = layers_by_key[layer_key]
-        if is_framework_row(section):
+        if row_idx >= 81 and is_framework_row(section):
             list_items = build_list_items(layer_key, content)
             if list_items:
                 layer["listItems"] = list_items
         else:
-            apply_layer_definition(layer, content)
+            apply_layer_definition(layer, content, row_idx=row_idx)
+
+    for layer in config.get("layers", []):
+        layer.setdefault("learner_subheading", "")
+        layer.setdefault("impact_subheading", "")
+        layer.pop("subheading", None)
 
     config = resolve_asset_urls(config)
 

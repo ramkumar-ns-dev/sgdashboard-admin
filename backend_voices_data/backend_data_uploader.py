@@ -3,7 +3,6 @@ import logging
 from datetime import datetime
 from google.cloud import storage
 from dotenv import load_dotenv
-from backend_voices_data import feeds, themes, stories, animations
 from .utils import get_env_var, get_gcp_credentials
 
 # --------------------------------------------------
@@ -107,6 +106,41 @@ def upload_to_gcp(uploaded_file, csv_type):
 
 
 def trigger_processing(csv_type):
+    """
+    Call feeds.py / themes.py / stories.py / animations.py after upload
+    """
+
+    try:
+        if csv_type == "Micro Improvement Feed":
+            from backend_voices_data import feeds
+            feeds.main()
+            logger.info("Microimprovement Feed processed")
+            return True, "Microimprovement Feed processed"
+
+        if csv_type == "Themes Emerged":
+            from backend_voices_data import themes
+            themes.main()
+            logger.info("Themes Emerged processed")
+            return True, "Themes Emerged processed"
+
+        if csv_type == "Stories":
+            from backend_voices_data import stories
+            stories.main()
+            logger.info("Stories processed")
+            return True, "Stories processed"
+
+        if csv_type == "Cracks and Flowers":
+            from backend_voices_data import animations
+            animations.main()
+            logger.info("Cracks and Flowers processed")
+            return True, "Cracks and Flowers processed"
+
+        logger.info(f"No processing defined for {csv_type}")
+        return True, "Upload completed (no processing)"
+
+    except Exception as e:
+        logger.error("Processing failed", exc_info=True)
+        return False, str(e)
     """
     Call feeds.py / themes.py / stories.py / animations.py after upload
     """

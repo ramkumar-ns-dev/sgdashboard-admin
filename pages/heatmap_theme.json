@@ -48,5 +48,10 @@
     "color": "theme10",
     "gridClass": "span-1-1",
     "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/other_factors.svg"
+  },
+  "11": {
+    "color": "theme11",
+    "gridClass": "span-1-1",
+    "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/nutrition_barrier.svg"
   }
 }
