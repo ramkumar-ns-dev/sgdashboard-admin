@@ -6,7 +6,7 @@
         "type": "category_1",
         "details": [
           {
-            "value": 702947,
+            "value": 726921,
             "code": "Micro Improvements initiated"
           },
           {
@@ -32,7 +32,7 @@
         "type": "category_1",
         "details": [
           {
-            "value": 46829,
+            "value": 48671,
             "code": "Micro Improvements initiated"
           },
           {
@@ -40,15 +40,15 @@
             "code": "Districts driving improvements"
           },
           {
-            "value": 4911,
+            "value": 6566,
             "code": "Leaders driving \nimprovements"
           },
           {
-            "value": 1409,
+            "value": 1628,
             "code": "Schools driving improvements"
           },
           {
-            "value": 3,
+            "value": 7,
             "code": "Momentum partners"
           }
         ]
@@ -74,7 +74,7 @@
             "code": "Schools driving improvements"
           },
           {
-            "value": 2,
+            "value": 3,
             "code": "Momentum partners"
           }
         ]
@@ -84,7 +84,7 @@
         "type": "category_2",
         "details": [
           {
-            "value": 196291,
+            "value": 196475,
             "code": "Micro Improvements initiated"
           },
           {
@@ -200,7 +200,7 @@
             "code": "Schools driving improvements"
           },
           {
-            "value": 3,
+            "value": 4,
             "code": "Momentum partners"
           }
         ]
@@ -210,15 +210,15 @@
         "type": "category_2",
         "details": [
           {
-            "value": 147,
+            "value": 68,
             "code": "Micro Improvements initiated"
           },
           {
-            "value": 145,
+            "value": 68,
             "code": "Leaders driving \nimprovements"
           },
           {
-            "value": 105,
+            "value": 68,
             "code": "Schools driving improvements"
           },
           {
@@ -232,7 +232,7 @@
         "type": "category_1",
         "details": [
           {
-            "value": 133393,
+            "value": 144449,
             "code": "Micro Improvements initiated"
           },
           {
@@ -258,7 +258,7 @@
         "type": "category_1",
         "details": [
           {
-            "value": 316801,
+            "value": 336762,
             "code": "Micro Improvements initiated"
           },
           {
@@ -266,15 +266,15 @@
             "code": "Districts driving improvements"
           },
           {
-            "value": 25697,
+            "value": 25639,
             "code": "Leaders driving \nimprovements"
           },
           {
-            "value": 24550,
+            "value": 25145,
             "code": "Schools driving improvements"
           },
           {
-            "value": 2,
+            "value": 3,
             "code": "Momentum partners"
           }
         ]
@@ -310,7 +310,7 @@
         "type": "category_1",
         "details": [
           {
-            "value": 33078,
+            "value": 33277,
             "code": "Micro Improvements initiated"
           },
           {
@@ -318,7 +318,7 @@
             "code": "Districts driving improvements"
           },
           {
-            "value": 6152,
+            "value": 6163,
             "code": "Leaders driving \nimprovements"
           },
           {
@@ -456,7 +456,7 @@
       "details": [
         {
           "code": "Micro Improvements initiated",
-          "value": 1665868
+          "value": 1723005
         },
         {
           "code": "Districts driving improvements",
@@ -464,15 +464,15 @@
         },
         {
           "code": "Leaders driving \nimprovements",
-          "value": 393205
+          "value": 394736
         },
         {
           "code": "Schools driving improvements",
-          "value": 213539
+          "value": 214316
         },
         {
           "code": "Momentum partners",
-          "value": 44.0
+          "value": 47.0
         }
       ]
     },

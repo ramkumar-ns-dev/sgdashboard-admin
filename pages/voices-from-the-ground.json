@@ -60,7 +60,7 @@
     "type": "mitra-text",
     "width": "100%",
     "position": "left",
-    "content": "*To explore voices from ongoing programs, visit the&nbsp;<a href='https://analytics.gritworks.ai/public/dashboard/5e9ba88d-d974-4ddf-bc97-2d1cc24952ec?date=&state=&tab=158-mitra-overview' target='_blank'><strong>MItra Public Dashboard</strong></a>. For deeper insights and detailed analysis, refer to the&nbsp;<a href='https://analytics.gritworks.ai/auth/login' target='_blank'><strong>MItra Insights Dashboard</strong></a>."
+    "content": "*To explore voices from ongoing programs, visit the&nbsp;<a href='https://analytics.mitra.shikshalokam.org/public/dashboard/5e9ba88d-d974-4ddf-bc97-2d1cc24952ec?date=&state=&tab=158-mitra-overview' target='_blank'><strong>MItra Public Dashboard</strong></a>. For deeper insights and detailed analysis, refer to the&nbsp;<a href='https://analytics.mitra.shikshalokam.org/auth/login' target='_blank'><strong>MItra Insights Dashboard</strong></a>."
   },
   {
     "type": "section-heading",
@@ -117,17 +117,17 @@
         {
           "year": 2025,
           "data": [
-            44.0,
-            216.0,
-            541.0,
-            680.0
+            44,
+            216,
+            541,
+            680
           ]
         },
         {
           "year": 2026,
           "data": [
-            785.0,
-            785.0
+            785,
+            785
           ]
         }
       ],
@@ -135,17 +135,17 @@
         {
           "year": 2025,
           "data": [
-            65236.0,
-            333454.0,
-            598424.0,
-            612779.0
+            65236,
+            333454,
+            598424,
+            612779
           ]
         },
         {
           "year": 2026,
           "data": [
-            1058375.0,
-            1216580.0
+            1058375,
+            1216580
           ]
         }
       ]
@@ -159,17 +159,17 @@
       {
         "year": 2025,
         "data": [
-          2950.0,
-          12747.0,
-          24922.0,
-          26217.0
+          2950,
+          12747,
+          24922,
+          26217
         ]
       },
       {
         "year": 2026,
         "data": [
-          38936.0,
-          51148.0
+          38936,
+          51148
         ]
       }
     ],

@@ -1,7 +1,7 @@
 {
   "layerHeading": "Impact Narrative",
   "title": "What Shapes Learner Outcomes?",
-  "description": "A learner\u2019s outcomes are shaped across multiple, interconnected layers.",
+  "description": "A learner’s outcomes are shaped across multiple, interconnected layers.",
   "layerFootnote": "*Click any layer or tile to know more.",
   "chipFootnote": "*Click any layer or tile to know more.",
   "defaultLayer": "students",
@@ -14,7 +14,7 @@
   "programChipFootnote": "* Click on any of the above tile to read more about it.",
   "defaultNarrativeBody": "Tap a layer to see what it means.",
   "defaultCtaLabel": "Know more",
-  "defaultPartnerImage": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/default-partner.svg",
+  "defaultPartnerImage": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/default-partner.svg",
   "defaultCardLabelPrefix": "Card ",
   "ctaIcon": "north_east",
   "staticTexts": {
@@ -61,15 +61,15 @@
         "labelY": 300,
         "labelLayout": "icon-only",
         "labelAnchor": "middle",
-        "iconX": 278,
-        "iconY": 270,
+        "iconX": 275,
+        "iconY": 275,
         "dataLayerAttr": "learner",
         "icon": {
           "type": "material",
-          "value": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/learner.svg",
+          "value": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/learner.svg",
           "color": "#D11F44",
-          "width": 43,
-          "height": 43
+          "width": 50,
+          "height": 34
         },
         "text": {
           "x": 300,
@@ -80,7 +80,7 @@
         }
       },
       "panelType": "list",
-      "imgPath": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/student.svg",
+      "imgPath": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/student.svg",
       "heading": "Learner Outcomes",
       "learner_subheading": "The learner is at the centre of change and actively shapes their own learning journey. Their participation, engagement, agency and time spent meaningfully involved in learning directly influence the outcomes they experience.",
       "impact_subheading": "Measures whether children are experiencing improved learning outcomes through better access, learning, well-being, aspirations, and future readiness.",
@@ -101,13 +101,13 @@
         {
           "letter": "L",
           "icon": "menu_book",
-          "title": "Learning & future readiness",
+          "title": "Learning",
           "description": "Are children demonstrating improved academic and holistic learning outcomes along with future ready skills?"
         },
         {
           "letter": "A",
           "icon": "star",
-          "title": "Aspiration and agency",
+          "title": "Aspiration & agency",
           "description": "Are children developing confidence, future aspirations, and awareness of opportunities?"
         },
         {
@@ -135,16 +135,16 @@
         "labelAnchor": "middle",
         "iconOffsetY": -18,
         "textOffsetY": 20,
-        "iconX": 278,
-        "iconY": 359,
+        "iconX": 277,
+        "iconY": 366,
         "curvedLabelPath": "M167.43,341.80 A139,139 0 0 0 432.57,341.80",
         "labelForAttr": "school & anganwadi",
         "icon": {
           "type": "material",
-          "value": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/school.svg",
+          "value": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/school.svg",
           "color": "#5b6ee0",
-          "width": 48,
-          "height": 48
+          "width": 50,
+          "height": 34
         },
         "text": {
           "x": 300,
@@ -155,9 +155,9 @@
         }
       },
       "panelType": "list",
-      "imgPath": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/school-solid.svg",
+      "imgPath": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/school-solid.svg",
       "heading": "Schools & Anganwadi Centres",
-      "learner_subheading": "Schools and Anganwadi centres shape learner outcomes by creating the day-to-day conditions in which learner learn, participate and develop. The quality of leadership, teaching and learning practices, relationships, and learning environment determines whether learner\u2019s needs are understood and supported and whether they have meaningful opportunities to learn and thrive.",
+      "learner_subheading": "Schools and Anganwadi centres shape learner outcomes by creating the day-to-day conditions in which learner learn, participate and develop. The quality of leadership, teaching and learning practices, relationships, and learning environment determines whether learner’s needs are understood and supported and whether they have meaningful opportunities to learn and thrive.",
       "impact_subheading": "Measures whether schools and Anganwadi centres are fostering quality learning through effective leadership, enabling learning environments, and strong teaching and learning practices.",
       "body": "Schools and anganwadi centres - where teaching happens and children spend most of their day.",
       "listItems": [
@@ -198,15 +198,15 @@
         "labelAnchor": "middle",
         "iconOffsetY": -18,
         "textOffsetY": 22,
-        "iconX": 280,
-        "iconY": 181,
+        "iconX": 277,
+        "iconY": 188,
         "curvedLabelPath": "M219.82,209.38 A121,121 0 0 1 380.18,209.38",
         "icon": {
           "type": "material",
-          "value": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/community.svg",
+          "value": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/community.svg",
           "color": "#e0338a",
-          "width": 44,
-          "height": 44
+          "width": 50,
+          "height": 34
         },
         "text": {
           "x": 300,
@@ -217,10 +217,10 @@
         }
       },
       "panelType": "story",
-      "imgPath": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/community-group.svg",
+      "imgPath": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/community-group.svg",
       "eyebrow": "Community",
       "heading": "Community",
-      "learner_subheading": "Communities act as a bridge between schools and learner: when parents and community actors are informed, engaged and invested in learner\u2019s education, they strengthen support for learning at home and in the community, reinforce aspirations, help schools respond to their needs, and contribute to ongoing school improvement.",
+      "learner_subheading": "Communities act as a bridge between schools and learner: when parents and community actors are informed, engaged and invested in learner’s education, they strengthen support for learning at home and in the community, reinforce aspirations, help schools respond to their needs, and contribute to ongoing school improvement.",
       "impact_subheading": "Measures whether communities are actively supporting education through leadership, participation, and positive perceptions of public schools.",
       "body": "Families and local networks that support and demand good education for their children.",
       "listItems": [
@@ -255,12 +255,12 @@
         "labelAnchor": "start",
         "textOffsetX": 34,
         "textOffsetY": 4,
-        "iconX": 224,
+        "iconX": 235,
         "iconY": 100,
         "curvedLabelPath": "M233.70,127.29 A185,185 0 0 1 366.30,127.29",
         "icon": {
           "type": "material",
-          "value": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/society.svg",
+          "value": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/society.svg",
           "color": "#99459a",
           "width": 34,
           "height": 34
@@ -277,7 +277,7 @@
       "imgPath": "",
       "eyebrow": "Society",
       "heading": "Society",
-      "learner_subheading": "Society shapes the aspirations, norms and opportunities that surround learner. It shapes the broader demand for quality education and the collective willingness to invest in learner\u2019s development.",
+      "learner_subheading": "Society shapes the aspirations, norms and opportunities that surround learner. It shapes the broader demand for quality education and the collective willingness to invest in learner’s development.",
       "impact_subheading": "Measures whether social norms and perceptions are shifting towards public schools.",
       "body": "The broader social norms and structures that surround the community.",
       "frameworkNote": "Framework being defined.",
@@ -315,16 +315,16 @@
         "labelAnchor": "start",
         "textOffsetX": 34,
         "textOffsetY": 4,
-        "iconX": 196,
-        "iconY": 448,
-        "curvedLabelPath": "M145.60,431.80 A203,203 0 0 0 467.30,415.00",
+        "iconX": 195,
+        "iconY": 460,
+        "curvedLabelPath": "M138.95,423.58 A203,203 0 0 0 461.05,423.58",
         "labelForAttr": "system institutions",
         "icon": {
           "type": "material",
-          "value": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/system-institutions.svg",
+          "value": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/system-institutions.svg",
           "color": "#562f91",
-          "width": 38,
-          "height": 38
+          "width": 34,
+          "height": 34
         },
         "text": {
           "x": 300,
@@ -338,7 +338,7 @@
       "imgPath": "",
       "eyebrow": "System Institutions",
       "heading": "System Institutions",
-      "learner_subheading": "System institutions enable and accelerate improvement across education by strengthening the ability of leaders, schools and communities to identify challenges, learn from evidence, take action and sustain what works\u2014helping effective local practices spread across the system.",
+      "learner_subheading": "System institutions enable and accelerate improvement across education by strengthening the ability of leaders, schools and communities to identify challenges, learn from evidence, take action and sustain what works—helping effective local practices spread across the system.",
       "impact_subheading": "Measures whether education institutions are enabling continuous improvement through collaboration, innovation, effective resource mobilisation, and evidence-based decision-making.",
       "body": "The governance, policy and institutions that enable and resource education. These institutions create the conditions for improvement at scale.",
       "listItems": [
@@ -385,16 +385,16 @@
         "labelAnchor": "start",
         "textOffsetX": 34,
         "textOffsetY": 4,
-        "iconX": 212,
-        "iconY": 42,
+        "iconX": 215,
+        "iconY": 45,
         "hitRadius": 344,
         "isHitTarget": true,
         "icon": {
           "type": "material",
-          "value": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/network.svg",
+          "value": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/network.svg",
           "color": "#961c00",
-          "width": 40,
-          "height": 40
+          "width": 34,
+          "height": 34
         },
         "text": {
           "x": 300,
@@ -404,7 +404,7 @@
           "fontWeight": 600
         }
       },
-      "imgPath": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/network-users.svg",
+      "imgPath": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/network-users.svg",
       "panelType": "story",
       "eyebrow": "Network",
       "heading": "Network",
