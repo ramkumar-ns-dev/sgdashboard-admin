@@ -14,33 +14,33 @@
     "indicators": [
       {
         "label": "Shiksha \nChaupals",
-        "value": 45850,
-        "icon": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/shiksha_chaupal.svg"
+        "value": 46316,
+        "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/shiksha_chaupal.svg"
       },
       {
         "label": "Community members \nparticipating in dialogues",
-        "value": 1216580,
-        "icon": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/community_members.svg"
+        "value": 1220666,
+        "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/community_members.svg"
       },
       {
         "label": "Local challenges \nidentified",
-        "value": 113620,
-        "icon": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/local_challenges.svg"
+        "value": 113975,
+        "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/local_challenges.svg"
       },
       {
         "label": "Community leaders \ndriving improvements",
-        "value": 785,
-        "icon": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/community_leader.svg"
+        "value": 800,
+        "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/community_leader.svg"
       },
       {
         "label": "Local solutions \nidentified",
-        "value": 102206,
-        "icon": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/local_solutions.svg"
+        "value": 102652,
+        "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/local_solutions.svg"
       },
       {
         "label": "Local solutions \nimplemented",
-        "value": 5298,
-        "icon": "https://storage.googleapis.com/qa-sg-dashboard/sg-dashboard/assets/icons/local_solutions_implemented.svg"
+        "value": 5471,
+        "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/local_solutions_implemented.svg"
       }
     ],
     "styles": {
@@ -117,17 +117,17 @@
         {
           "year": 2025,
           "data": [
-            44,
-            216,
-            541,
-            680
+            44.0,
+            216.0,
+            541.0,
+            680.0
           ]
         },
         {
           "year": 2026,
           "data": [
-            785,
-            785
+            785.0,
+            800.0
           ]
         }
       ],
@@ -135,17 +135,17 @@
         {
           "year": 2025,
           "data": [
-            65236,
-            333454,
-            598424,
-            612779
+            65236.0,
+            333454.0,
+            598424.0,
+            612779.0
           ]
         },
         {
           "year": 2026,
           "data": [
-            1058375,
-            1216580
+            1058375.0,
+            1220666.0
           ]
         }
       ]
@@ -159,17 +159,17 @@
       {
         "year": 2025,
         "data": [
-          2950,
-          12747,
-          24922,
-          26217
+          2950.0,
+          12747.0,
+          24922.0,
+          26217.0
         ]
       },
       {
         "year": 2026,
         "data": [
-          38936,
-          51148
+          38936.0,
+          51787.0
         ]
       }
     ],

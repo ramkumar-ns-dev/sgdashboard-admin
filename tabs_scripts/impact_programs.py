@@ -89,27 +89,69 @@ def format_file_size(size_bytes):
 
 
 def get_file_type(metadata):
-    mime_type = metadata.get("mimeType", "")
+    mime_type = metadata.get("mimeType", "").lower()
     file_name = metadata.get("name", "")
 
+    # Google Workspace files
+    google_workspace_types = {
+        "application/vnd.google-apps.presentation": "PPTX",
+        "application/vnd.google-apps.spreadsheet": "XLSX",
+        "application/vnd.google-apps.document": "DOCX",
+    }
+
+    if mime_type in google_workspace_types:
+        return google_workspace_types[mime_type]
+
+    # Standard Microsoft Office MIME types
+    office_types = {
+        "application/vnd.openxmlformats-officedocument.presentationml.presentation": "PPTX",
+        "application/vnd.ms-powerpoint": "PPTX",
+
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "XLSX",
+        "application/vnd.ms-excel": "XLSX",
+
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document": "DOCX",
+        "application/msword": "DOCX",
+    }
+
+    if mime_type in office_types:
+        return office_types[mime_type]
+
+    # Other known MIME types
     if mime_type == "application/pdf":
         return "PDF"
+
     if mime_type.startswith("image/"):
         return mime_type.split("/", 1)[1].upper()
+
     if mime_type.startswith("video/"):
         return mime_type.split("/", 1)[1].upper()
+
     if mime_type.startswith("audio/"):
         return mime_type.split("/", 1)[1].upper()
 
+    # File extension fallback
     _, extension = os.path.splitext(file_name)
-    if extension:
-        return extension.lstrip(".").upper()
 
+    if extension:
+        extension = extension.lstrip(".").upper()
+
+        if extension in {"PPT", "PPTX", "PPTM"}:
+            return "PPTX"
+
+        if extension in {"XLS", "XLSX", "XLSM"}:
+            return "XLSX"
+
+        if extension in {"DOC", "DOCX", "DOCM"}:
+            return "DOCX"
+
+        return extension
+
+    # Final MIME fallback
     if mime_type:
         return mime_type.split("/")[-1].upper()
 
     return ""
-
 
 def get_drive_service():
     global drive_service

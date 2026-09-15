@@ -2,56 +2,76 @@
   "1": {
     "color": "theme1",
     "gridClass": "span-2-2",
-    "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/poverty_and_economic_barriers.svg"
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/poverty_and_economic_barriers.svg"
   },
   "2": {
     "color": "theme2",
     "gridClass": "span-2-2",
-    "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/legeal_document.svg"
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/legal_document_linked_barriers.svg"
   },
   "3": {
     "color": "theme3",
     "gridClass": "span-1-2",
-    "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/early_marriage.svg"
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/early_marriage.svg"
   },
   "4": {
     "color": "theme4",
     "gridClass": "span-2-2",
-    "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/distance_and_accessibility_issues.svg"
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/distance_and_accessibility_issues.svg"
   },
   "5": {
     "color": "theme5",
     "gridClass": "span-1-1",
-    "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/parental_attitudes_and_socio-cultural_barriers.svg"
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/parental_attitudes_and_socio-cultural_barriers.svg"
   },
   "6": {
     "color": "theme6",
     "gridClass": "span-1-1",
-    "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/school_infrastructure.svg"
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/school_infrastructure.svg"
   },
   "7": {
     "color": "theme7",
     "gridClass": "span-1-1",
-    "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/teacher_capacity_and__quality_issues.svg"
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/teacher_capacity_and__quality_issues.svg"
   },
   "8": {
     "color": "theme8",
     "gridClass": "span-1-1",
-    "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/safety_concerns.svg"
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/safety_concerns.svg"
   },
   "9": {
     "color": "theme9",
     "gridClass": "span-1-1",
-    "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/substance_abuse_and_addiction.svg"
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/substance_abuse_and_addiction.svg"
   },
   "10": {
     "color": "theme10",
     "gridClass": "span-1-1",
-    "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/other_factors.svg"
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/other_factors.svg"
   },
   "11": {
     "color": "theme11",
     "gridClass": "span-1-1",
-    "icon": "https://storage.googleapis.com/dev-sg-dashboard/sg-dashboard/assets/icons/nutrition_barrier.svg"
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/nutrition_barrier.svg"
+  },
+  "12": {
+    "color": "theme12",
+    "gridClass": "span-1-1",
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/disability_barrier.svg"
+  },
+  "13": {
+    "color": "theme13",
+    "gridClass": "span-1-1",
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/nutrition_barrier.svg"
+  },
+  "14": {
+    "color": "theme14",
+    "gridClass": "span-1-1",
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/info_barrier.svg"
+  },
+  "15": {
+    "color": "theme15",
+    "gridClass": "span-1-1",
+    "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/assets/icons/aspiration_barrier.svg"
   }
 }
