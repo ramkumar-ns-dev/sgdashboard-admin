@@ -76,6 +76,11 @@
         "label": "Funds mobilised (INR)",
         "value": "56.23 crore",
         "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/partners/funds_mobilised_inr.svg"
+      },
+      {
+        "label": "Funds orchestrated (INR)",
+        "value": "160.16 crore",
+        "icon": "https://storage.googleapis.com/prod-sg-dashbaord/sg-dashboard/partners/funds_orchestrated_inr.svg"
       }
     ],
     "styles": {

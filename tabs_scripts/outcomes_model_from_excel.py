@@ -128,7 +128,7 @@ OUTCOMES_MODEL_TEMPLATE = {
             },
             "panelType": "list",
             "imgPath": "assets/icons/student.svg",
-            "heading": "Learners Outcomes",
+            "heading": "Learner Outcomes",
             "learner_subheading": "",
             "impact_subheading": "",
             "body": (
